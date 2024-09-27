@@ -1,0 +1,125 @@
+html, body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-image: linear-gradient(black, #26355D);
+    font-family: monospace;
+}
+
+#canvMain{
+    border-radius: 2vh;
+    height: 99vh;
+    width: 99vw;
+}
+
+#root{
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#canvMainDiv{
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#MainFunctionsDiv{
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content:end;
+}
+
+#Functions{
+    color: white;
+    display: flex;
+    gap: 2vw;
+    background-image:linear-gradient(#AF47D2,  #26355D);
+    padding-right: 5vh;
+    padding-left: 5vh;
+    padding-top: 1vh;
+    padding-bottom: 3vh;
+    /* border: solid 1vh; */
+    border-top: 0;
+    border-color: #FFDB00;
+    border-bottom-left-radius: 1vh;
+    font-size: calc(15px + 0.5vw);
+}
+
+#Functions>button{
+    border: 0;
+    font-family: monospace;
+    font-weight: bolder;
+    color: white;
+    background-color: #26355D;
+    padding: 5%;
+    border-radius: calc(5px + 1vh);
+}
+#Functions>button:hover{
+    background-color: #92248c;
+}
+
+#Functions>button:active{
+    color: #26355D;
+    background-color: white;
+}
+
+#Functions>div{
+    font-size: larger;
+}
+
+
+#slider{
+    z-index: 5;
+    position: absolute;
+    width: 30%;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+}
+
+#sliderMain{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: calc(1vw + 10px);
+    gap: 0;
+
+    /* animation-name: move;
+    animation-duration: 500ms;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out; */
+}
+
+#displaySlider{
+    z-index: 7;
+    height: 30%;
+    background-image:linear-gradient(#AF47D2,  #26355D);
+    border: 0;
+    border-bottom-right-radius: 2vh;
+    border-top-right-radius: 2vh;
+}
+
+#displaySlider:active{
+    background-image: linear-gradient(#FF8F00, #FFDB00);
+}
+
+@keyframes move{
+    0%{
+        margin-left: 0;
+    }
+
+    100%{
+        margin-left: -100%;
+    }
+}

@@ -1,0 +1,21 @@
+.planetDescr{
+    display: flex;
+    flex-direction: column;
+}
+
+.planetDescr>img{
+    align-self: center;
+    object-fit: contain;
+    width: 90%;
+    height: auto;
+    border-radius: 1vh;
+}
+
+b{
+    color: #26355D;
+}
+
+.planetDescr>h1{
+    color: #26355D;
+    font-weight: bolder;
+}
